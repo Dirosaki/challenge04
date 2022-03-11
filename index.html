@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/variables.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<script defer src="js/script.js"></script>
+		<title>Login | Codelândia</title>
+	</head>
+	<body>
+		<aside>
+			<img src="assets/illustration.svg" alt="Ilustração" />
+		</aside>
+		<main>
+			<header>
+				<p>Bem vindo de volta</p>
+				<h1>Faça o login na sua conta</h1>
+			</header>
+
+			<form onsubmit="handleSubmit(event)">
+				<label for="email">
+					E-mail
+					<input type="text" name="email" required />
+				</label>
+
+				<label for="password">
+					Senha
+					<input type="password" name="password" required minlength="6" />
+				</label>
+
+				<div class="form__checkboxWrapper">
+					<label for="rememberMe">
+						<input type="checkbox" name="rememberMe" id="rememberMe" />
+						Lembre de mim
+					</label>
+
+					<a href="#">Esqueceu sua senha?</a>
+				</div>
+
+				<div class="form__buttonWrapper">
+					<button type="submit" class="buttonWrapper__buttonLoginWithEmailAndPassword">Entrar</button>
+					<button type="button" class="buttonWrapper__buttonLoginWithGoogleAccount">
+						<img src="assets/googleIcon.svg" alt="Ícone logo do Google" />
+						Ou faça login com o Google
+					</button>
+				</div>
+			</form>
+
+			<p>Não tem uma conta? <a href="#"> Cadastre-se</a></p>
+		</main>
+	</body>
+</html>
